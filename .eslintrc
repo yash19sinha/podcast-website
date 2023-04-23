@@ -1,0 +1,14 @@
+{
+  "extends": ["react-app", "prettier", "prettier/react"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "rules": {
+    "import/no-anonymous-default-export": "off"
+  }
+}
