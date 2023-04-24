@@ -7,15 +7,23 @@ import { store, persistor } from './store/store'
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 import './index.scss'
+import { Auth0Provider } from "@auth0/auth0-react";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Auth0Provider
+    domain="dev-736t6yc5vudkbb2w.us.auth0.com"
+    clientId="qne1qj0Bc3ndFDFq5ZiBlu0qdJTDbcm4"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}
+  >
     <Provider store={store}>
       <PersistGate persistor={persistor}>
         <App />
       </PersistGate>
     </Provider>
-  </React.StrictMode>,
+    </Auth0Provider>
+  ,
   document.getElementById('root'),
 )
 
