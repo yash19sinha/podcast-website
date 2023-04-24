@@ -3,6 +3,6 @@ import axios from 'axios'
 export const listenNotesApi = axios.create({
     baseURL: 'https://listen-api.listennotes.com/api/v2',
     headers: {
-        'X-ListenAPI-Key': 'f6a97d812d444393b0b98e3017c7e1e6'
+        'X-ListenAPI-Key': 'b56f3d8b4cac437f8db2986be975ade5'
     },
 })
