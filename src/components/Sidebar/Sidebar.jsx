@@ -76,6 +76,7 @@ export const Sidebar = () => {
                   {/* <SearchIcon className={styles.LinkIcon} /> */}
                   <i class='fa-solid fa-right-from-bracket' style={{ marginRight: '15px' }}></i>
                   <a
+                    href="/#"
                     className={styles.abc}
                     onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}
                   >
@@ -88,7 +89,7 @@ export const Sidebar = () => {
                 <NavLink to='/Login' className={styles.Link} activeClassName={styles.ActiveLink}>
                   {/* <SearchIcon className={styles.LinkIcon} /> */}
                   <i class='fa-regular fa-user' style={{ marginRight: '15px' }}></i>
-                  <a className={styles.abc} onClick={() => loginWithRedirect()}>
+                  <a className={styles.abc} onClick={() => loginWithRedirect()} href="/#">
                     Log In
                   </a>
                 </NavLink>
