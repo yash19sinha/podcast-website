@@ -10,13 +10,6 @@ A web app for listening to podcasts. View the top podcasts, discover new podcast
 Install the packages by running:
 `yarn install`
 
-### Configuring
-
-Create `.env` file in the project directory and set value
-```
-REACT_APP_LISTEN_NOTES_API_KEY=apikey
-```
-
 ## Available Scripts
 
 In the project directory, you can run:
